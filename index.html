@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de mots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Bawer Game</h1>
+    <h2>JEU DE MOT</h2>
+</header>
+
+<!-- FORMULAIRE UTILISATEUR -->
+<form id="userForm">
+    <label for="nom">Votre nom</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="prenom">Votre prénom</label>
+    <input type="text" id="prenom" name="prenom" required>
+
+    <label for="email">Votre email</label>
+    <input type="email" id="email" name="email" required>
+
+    <button type="submit">Envoyer</button>
+</form>
+
+<p id="valid"></p>
+
+<!-- JEU -->
+<section id="game" style="display:none;">
+    <p id="timer">Temps : 20 s</p>
+    <h3 id="question"></h3>
+    <input type="text" id="userAnswer" placeholder="Votre réponse ici">
+    <button id="btn">Valider</button>
+    <p id="result"></p>
+</section>
+
+<!-- REÇU -->
+<section id="receipt" style="display:none;">
+    <h3>Reçu du joueur 🎉</h3>
+    <p id="recapName"></p>
+    <p id="recapEmail"></p>
+    <p id="recapScore"></p>
+    <p id="recapPercentage"></p>
+</section>
+
+<footer>
+    <p>&copy; Réalisé par Beken-Service</p>
+    <p>Great website on Beken-Service</p>
+</footer>
+
+<script src="game.js"></script>
+</body>
+</html>
