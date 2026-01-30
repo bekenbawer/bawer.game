@@ -40,7 +40,7 @@ let questions = [
 
 let index = 0;
 let score = 0;
-let time = 20;
+let time = 30;
 let timer;
 
 /* ===== FORMULAIRE ===== */
@@ -81,7 +81,7 @@ function afficherQuestion() {
 /* ===== TIMER ===== */
 function startTimer() {
     clearInterval(timer);
-    time = 20;
+    time = 30;
     timerEl.textContent = "Temps : " + time + " s";
 
     timer = setInterval(() => {
@@ -136,4 +136,5 @@ function afficherResultatFinal() {
     recapScore.textContent = "Score : " + score + " / " + questions.length;
     recapPercentage.textContent = "Pourcentage : " + pourcentage + "%";
 }
+
 
