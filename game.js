@@ -21,8 +21,6 @@ let questions = [
     { question: "Quelle balise HTML est utilisée pour créer un lien ?", answer: "a" },
     { question: "Quel attribut HTML permet de lier un fichier CSS ?", answer: "link" },
     { question: "Comment dit-on: je suis daccord en anglais ?" , answer: "i am agree"},
-    { question: "Comment dit-on"}
-    
     { question: "Quelle propriété CSS permet de changer la couleur du texte ?", answer: "color" },
     { question: "Quelle propriété CSS permet de centrer un texte horizontalement ?", answer: "text-align" },
     { question: "Quelle méthode JavaScript permet de sélectionner un élément par son id ?", answer: "getelementbyid" },
@@ -138,3 +136,4 @@ function afficherResultatFinal() {
     recapScore.textContent = "Score : " + score + " / " + questions.length;
     recapPercentage.textContent = "Pourcentage : " + pourcentage + "%";
 }
+
